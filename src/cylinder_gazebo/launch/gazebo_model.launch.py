@@ -8,7 +8,6 @@ from launch.launch_description_sources import PythonLaunchDescriptionSource
 from launch_ros.actions import Node
 import xacro
 
-
 def generate_launch_description():
         
         # this name has to match the robot name in the xacro file

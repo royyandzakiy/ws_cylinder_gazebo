@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 
-<robot xlmns:xacro="http://www.ros.org/wiki/xacro" name="cylinder_robot">
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="cylinder_robot">
 
 <xacro:property name="base_link_length" value="0.5"/>
 <xacro:property name="base_link_radius" value="0.4"/>
