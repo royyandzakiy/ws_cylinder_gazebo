@@ -1,7 +1,7 @@
 import os
 from ament_index_python.packages import get_package_share_directory
 from launch import LaunchDescription
-from launch.actions import IncludeLaunchDescription, ExecuteProcess
+from launch.actions import IncludeLaunchDescription
 from launch.launch_description_sources import PythonLaunchDescriptionSource
 
 
@@ -62,8 +62,5 @@ def generate_launch_description():
         # we add the two nodes
         launchDescriptionObject.add_action(spawnModelNode)
         launchDescriptionObject.add_action(nodeRobotStatePublisher)
-        # launchDescriptionObject.add_action(ExecuteProcess(
-        #     cmd=['gazebo', '--verbose', '-s', 'libgazebo_ros_factory.so'],
-        #     output='screen'))
 
         return launchDescriptionObject
